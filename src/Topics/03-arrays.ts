@@ -30,5 +30,11 @@ const kitty: IPet = {
 const pets: IPet[] = [firulais, kitty];
 console.log(pets);
 
+const petsFemale = pets.filter((pet) => {
+  return pet.isFemale;
+});
+
+console.log("Las mascotas hembra son: ", petsFemale);
+
 //#endregion
 export {};
